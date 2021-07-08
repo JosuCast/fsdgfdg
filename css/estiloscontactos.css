@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3{
+    color: #1d273b;
+    font-weight: 300;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor3{
+    width: 80%;
+    max-width: 35000px;
+    overflow: hidden;
+    margin-left: 150px;
+    display: flex;
+}
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    /*transition: ease-in-out 0.5s;*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+.nav .logo{
+    height: 80px;
+}
+.nav .logo img{
+    height: 100%;
+    vertical-align: top;
+}
+.enlaces-header{
+    font-weight: 300;
+}
+.nav .enlaces-header a{
+    color: #5d6678;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5 ease-in;
+}
+.hamburguer > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+.contacto h1{
+    padding-left: 50px;  
+    margin-top: 35px; 
+}
+.contacto p{
+    margin-left: 55px;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+.contacto1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.contacto{
+    margin-top: 135px;
+    margin-left: 50px;
+}
+.call{
+    background: #c7c7c7;
+    padding: 35px;
+    text-align: center;
+}
+.foto{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.foto img{
+    height: 300px;
+}
+.info{
+    margin-left: 0;
+}
+.aside{
+    padding-left: 350px;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+    
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+.colum1{
+    max-width: 400px;
+}
+.colum1 h4{
+    font-size: 22px;
+}
+.colum1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+.colum2{
+    max-width: 400px;
+}
+.colum2 h4{
+    font-size: 22px;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+.row i{
+    font-size: 35px;
+}
+.row i label{
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+    color: #c7c7c7;
+}
+.colum3{
+    max-width: 400px;
+}
+.colum3 h4{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+.row2 i{
+    font-size: 35px;
+}
+.row2 label{
+    margin-left: 20px;
+    max-width: 140px;
+    margin-top: 10px;
+}
+.container-footer{
+    width: 100%;
+    background: #101010;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+.copyright{
+    color: #c7c7c7;
+}
+.terminos a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+@media screen and (max-width:1200px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .colum1{
+        max-width: 100%;
+    }
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+    .contacto{
+        max-width: 1200px;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .contacto h1{
+        max-width: 1200px;
+        width: 100%;
+    }
+    .contacto1{
+        width: 100%;
+        max-width: 1200px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .call{
+        margin-top: 95px;
+        width: 450px;
+        height: 100px;
+        margin-right: 20px;
+    }
+    .info{
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 55px;
+    }
+    .aside{
+        margin-left: 0;
+        padding-left: 95px;
+        margin-right: 0;
+        padding-right: 0;
+        display: flex;
+    }
+    .footer{
+        width: 100%;
+        max-width: 1200px;
+        margin-right: 0;
+    }
+    .nav .enlaces-header a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:800px){
+    .contacto{
+        width: 400px;
+        max-width: 600px;
+    }
+    .contacto p{
+        width: 560px;
+    }
+    .contacto1{
+        flex-direction: column;
+    }
+    .call{
+        padding: 0px;
+        width: 500px;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .aside img{
+        margin-left: 85px;
+    }
+    .nav .logo img{
+        width: 250px;
+        padding-left: 25px;
+    }
+}
+@media screen and (max-width:992px){
+    .contenedor{ 
+        justify-content: space-around;
+    }
+    .contacto{
+        width: 400px;
+    }
+    .contacto p{
+        width: 560px;
+    }
+    .contacto1{
+        flex-direction: column;
+    }
+    .call{
+        padding: 0px;
+        width: 500px;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 120px;
+        padding-top: 10px;
+    }
+    .aside img{
+        margin-left: 5px;
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width:864px){
+    .enlaces-header {
+        position: fixed;
+        background: #667db6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+    .hamburguer{
+        display: block;
+    }
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+    .quienessomos{
+        padding-left: 20px;
+    }
+}
+
